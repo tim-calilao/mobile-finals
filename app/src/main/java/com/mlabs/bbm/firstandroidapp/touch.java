@@ -44,7 +44,7 @@ public class touch extends AppCompatActivity {
                     }
                     case MotionEvent.ACTION_UP: {
                         cursorX2 = motion.getX(); cursorY2 = motion.getY();
-                        message = message +"X: "+ cursorX2; message = message +" Y: "+cursorY2;
+                        message = message +" X: "+ cursorX2; message = message +" Y: "+cursorY2;
                         if (cursorX < cursorX2){
 
                             message = message+"Swiped Right ";
