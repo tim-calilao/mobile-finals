@@ -57,7 +57,6 @@ public class signup extends AppCompatActivity{
                                         {
                                             Toast.makeText(getBaseContext(),"You have succesfully registered!", Toast.LENGTH_SHORT).show();
                                             Toast.makeText(getBaseContext(),"Created at: " + formattedDate, Toast.LENGTH_SHORT).show();
-                                            
                                             finish();
 
                                         }
