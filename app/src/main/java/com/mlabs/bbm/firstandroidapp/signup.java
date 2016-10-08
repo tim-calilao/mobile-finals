@@ -41,13 +41,13 @@ public class signup extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 final String strPass = etsignPass.getText().toString();
-                final String strConPass = etsignPass.getText().toString();
+                final String strConPass = etsignConPass.getText().toString();
 
                 if(android.util.Patterns.EMAIL_ADDRESS.matcher(etsignEmail.getText().toString()).matches()){
                     if(Pattern.compile("^([A-Z][a-z]+ ?)+$").matcher(etsignFname.getText()).matches()){
                         if(Pattern.compile("^([A-Z][a-z]+ ?)+$").matcher(etsignLname.getText()).matches()){
                             if(!(etsignPass.length()== 0)){
-                                if(etsignPass.length()>8){
+                                if(etsignPass.length()>=8){
                                     if(strPass.equals(strConPass)){
                                         Calendar c = Calendar.getInstance();
                                         SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
